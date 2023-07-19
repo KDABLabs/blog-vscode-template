@@ -12,7 +12,9 @@ We illustrate two approaches:
 # Installing required extensions
 
 Extensions should be automatically installed, per our `.vscode/extensions.json`. But you can go ahead and install already with this oneliner:
-`code --install-extension ms-vscode.cpptools --install-extension ms-vscode.cmake-tools --install-extension twxs.cmake --install-extension llvm-vs-code-extensions.vscode-clangd`
+```
+code --install-extension ms-vscode.cpptools --install-extension ms-vscode.cmake-tools --install-extension twxs.cmake --install-extension llvm-vs-code-extensions.vscode-clangd
+```
 
 # Let's get to it
 
@@ -41,5 +43,7 @@ This project is just a template, you can reuse it in your own project. You'll ne
 - copy or create the `CMakePresets.json` file
 - copy or create the `CMakeUserPresets.json` file, however, do not commit it to your git repo, add it to .gitignore.
 - copy the qt6.natvis file, if using the `MSVC` compiler
+
+## Troubleshooting
 
 
