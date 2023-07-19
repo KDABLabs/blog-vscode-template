@@ -36,7 +36,7 @@ cd blog-vscode-template/ # If you're not inside it already
 code .
 ```
 
-Now open the `CMakeUserPresets.json` file and inspect the preset named `base-6.5.1-macos`, on line 16.
+Now open the `CMakeUserPresets.json` file and inspect the preset named `base-6.5.1-macos`.
 Make sure the `CMAKE_PREFIX_PATH` is correctly pointing to your desired Qt. Edit it.
 
 Note that typically CMakeUserPresets.json is not checked in to git, we have it here for example purposes. You are free to edit it. Put it in .gitignore so it's not deleted by mistake.
