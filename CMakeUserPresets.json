@@ -1,0 +1,40 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "base-6.5.1-msvc",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_PREFIX_PATH": "C:/Qt/6.5.1/msvc2019_64/"
+            },
+            "inherits": [
+                "base-ninja",
+                "base-msvc"
+            ]
+        },
+        {
+            "name": "debug-6.5.1-msvc",
+            "binaryDir": "${sourceDir}/build-debug-6.5.1-msvc",
+            "inherits": [
+                "base-debug",
+                "base-6.5.1-msvc"
+            ]
+        },
+        {
+            "name": "release-6.5.1-msvc",
+            "binaryDir": "${sourceDir}/build-release-6.5.1-msvc",
+            "inherits": [
+                "base-release",
+                "base-6.5.1-msvc"
+            ]
+        },
+        {
+            "name": "profile-6.5.1-msvc",
+            "binaryDir": "${sourceDir}/build-profile-6.5.1-msvc",
+            "inherits": [
+                "base-profile",
+                "base-6.5.1-msvc"
+            ]
+        }
+    ]
+}
