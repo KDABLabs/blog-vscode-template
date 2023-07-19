@@ -23,6 +23,9 @@ Click on the platform you're interested on to proceed:
 - [README-macOS.md](README-macOS.md)
 - [README-Linux.md](README-Linux.md)
 
+# Running
+
+For running, be sure to select the correct launch for you. `hello_world_qt6 (Windows)` for Windows, otherwise `hello_world_qt6 (macOS/Linux)`.
 
 ## Microsoft C/C++ extension vs clangd extension
 
