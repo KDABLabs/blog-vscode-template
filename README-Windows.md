@@ -24,20 +24,19 @@ Be sure it wasn't running before, so it picks up the new env.
 
 Now go ahead and choose either `debug`, `release` or `profile` preset, from the cmake toolbar at the bottom of your vscode window.
 
-# Automatic approach
+# Semi-automatic approach
 
-For this way, no Qt env variables need to be set. The advantage is you can start vscode from Windows start menu instead of terminal.
+Here we'll let the IDE find the compiler for us. No need to call `vsvars64.bat`.
 
-```
+We still need, however, to set some Qt related variables:
+- `QTDIR` is used for telling the debugger where to find Qt sources. So you can step into Qt.
+- `PATH` Unlike macOS and Linux, Windows doesn't support rpath. For launching your application, the Qt libraries need to be in PATH as well.
+
+```cmd
+set QTDIR=C:\Qt\6.5.1\msvc2019_64\
+set PATH=%PATH%;%QTDIR%\bin
 cd blog-vscode-template/ # If you're not inside it already
 code .
 ```
 
-Now open the `CMakeUserPresets.json` file and inspect the preset named `base-6.5.1-msvc`, on line 5.
-Make sure the `CMAKE_PREFIX_PATH` is correctly pointing to your desired Qt. Edit it.
-
-Note that typically CMakeUserPresets.json is not checked in to git, we have it here for example purposes. You are free to edit it. Put it in .gitignore so it's not deleted by mistake.
-
-Now go ahead and choose either `debug-6.5.1-msvc`, `release-6.5.1-msvc` or `profile-6.5.1-msvc` preset, from the cmake toolbar at the bottom of your vscode window. Do NOT chose the other presets (debug/release/profile), as those require env setup.
-
-> Note: It's still advised you set the `QTDIR` environment variable. It's used for telling the debugger where to find Qt sources. Ignore if you're not planing to debug into Qt libraries.
+Now go ahead and choose either `debug-msvc`, `release-msvc` or `profile-msvc` preset, from the cmake toolbar at the bottom of your vscode window. Do NOT chose the other presets (debug/release/profile).

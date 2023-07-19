@@ -93,6 +93,33 @@
         "base-ninja",
         "base-profile"
       ]
+    },
+    {
+      "name": "debug-msvc",
+      "binaryDir": "${sourceDir}/build-debug-msvc",
+      "inherits": [
+        "base-debug",
+        "base-ninja",
+        "base-msvc"
+      ]
+    },
+    {
+      "name": "release-msvc",
+      "binaryDir": "${sourceDir}/build-release-msvc",
+      "inherits": [
+        "base-release",
+        "base-ninja",
+        "base-msvc"
+      ]
+    },
+    {
+      "name": "profile-msvc",
+      "binaryDir": "${sourceDir}/build-profile-msvc",
+      "inherits": [
+        "base-profile",
+        "base-ninja",
+        "base-msvc"
+      ]
     }
   ]
 }
