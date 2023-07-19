@@ -27,6 +27,17 @@
             }
         },
         {
+            "name": "base-6.5.1-linux",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_PREFIX_PATH": "$env{HOME}/Qt/6.5.1/gcc_64"
+            },
+            "inherits": [
+                "base-ninja",
+                "base-linux"
+            ]
+        },
+        {
             "name": "debug-6.5.1-msvc",
             "binaryDir": "${sourceDir}/build-debug-6.5.1-msvc",
             "inherits": [
@@ -71,6 +82,30 @@
             "binaryDir": "${sourceDir}/build-profile-6.5.1-macos",
             "inherits": [
                 "base-6.5.1-macos",
+                "base-profile"
+            ]
+        },
+        {
+            "name": "debug-6.5.1-linux",
+            "binaryDir": "${sourceDir}/build-debug-6.5.1-linux",
+            "inherits": [
+                "base-6.5.1-linux",
+                "base-debug"
+            ]
+        },
+        {
+            "name": "release-6.5.1-linux",
+            "binaryDir": "${sourceDir}/build-release-6.5.1-linux",
+            "inherits": [
+                "base-6.5.1-linux",
+                "base-release"
+            ]
+        },
+        {
+            "name": "profile-6.5.1-linux",
+            "binaryDir": "${sourceDir}/build-profile-6.5.1-linux",
+            "inherits": [
+                "base-6.5.1-linux",
                 "base-profile"
             ]
         }

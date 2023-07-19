@@ -62,6 +62,15 @@
       }
     },
     {
+      "name": "base-linux",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      }
+    },
+    {
       "name": "debug",
       "binaryDir": "${sourceDir}/build-debug",
       "inherits": [
