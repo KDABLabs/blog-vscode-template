@@ -13,6 +13,20 @@
             ]
         },
         {
+            "name": "base-6.5.1-macos",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_PREFIX_PATH": "$env{HOME}/Qt/6.5.1/macos"
+            },
+            "inherits": [
+                "base-ninja",
+                "base-macos"
+            ],
+            "environment": {
+                "PATH": "$env{HOME}/Qt/Tools/Ninja/:$penv{PATH}"
+            }
+        },
+        {
             "name": "debug-6.5.1-msvc",
             "binaryDir": "${sourceDir}/build-debug-6.5.1-msvc",
             "inherits": [
@@ -34,6 +48,30 @@
             "inherits": [
                 "base-profile",
                 "base-6.5.1-msvc"
+            ]
+        },
+        {
+            "name": "debug-6.5.1-macos",
+            "binaryDir": "${sourceDir}/build-debug-6.5.1-macos",
+            "inherits": [
+                "base-6.5.1-macos",
+                "base-debug"
+            ]
+        },
+        {
+            "name": "release-6.5.1-macos",
+            "binaryDir": "${sourceDir}/build-release-6.5.1-macos",
+            "inherits": [
+                "base-6.5.1-macos",
+                "base-release"
+            ]
+        },
+        {
+            "name": "profile-6.5.1-macos",
+            "binaryDir": "${sourceDir}/build-profile-6.5.1-macos",
+            "inherits": [
+                "base-6.5.1-macos",
+                "base-profile"
             ]
         }
     ]

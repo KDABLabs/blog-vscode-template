@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "base-macos",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      }
+    },
+    {
       "name": "debug",
       "binaryDir": "${sourceDir}/build-debug",
       "inherits": [
