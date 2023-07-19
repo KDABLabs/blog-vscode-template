@@ -1,24 +1,19 @@
 # hello_world
 
-This small program is a template for working on Qt6 projects with Microsoft Visual Compiler and Visual Studio Code IDE.
+This small program is a template for working on Qt6 projects with Visual Studio Code IDE.
 
-## Requirements
+`Windows`, `macOS` and `Linux` are supported. For Windows, we additionally set up debugger source mapping and support for Qt pretty printers.
 
-In order for the template to work, you need to setup the environment on a console or a script, and run visual studio code from there.
+We illustrate two approaches:
+- Setting required `env variables` via terminal (such as Qt version and compiler)
+- Letting the `IDE` set it up for you.
 
-Small cmd script example:
-```
-"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat
-set QTDIR=C:\Qt\6.5.1\msvc2019_64\
-set PATH=%PATH%;%QTDIR%\bin
-```
 
-Then, you can start Visual Studio Code from the command line:
-```
-code .
-```
+Click on the platform you're interested on to proceed:
+- [README-Windows.md](README-Windows.md)
+- [README-macOS.md](README-macOS.md)
+- [README-Linux.md](README-Linux.md)
 
-> Note: it's important to define the `QTDIR` environment variable, as it's used by the setup
 
 ## Microsoft C/C++ extension vs clangd extension
 
@@ -36,7 +31,8 @@ The Microsoft ones has also some interesting features, like the ability to creat
 
 This project is just a template, you can reuse it in your own project. You'll need to:
 - copy the .vscode directory
-- copy or create the CMakePresets.json file
-- copy the qt6.natvis file
+- copy or create the `CMakePresets.json` file
+- copy or create the `CMakeUserPresets.json` file, however, do not commit it to your git repo, add it to .gitignore.
+- copy the qt6.natvis file, if using the `MSVC` compiler
 
 
