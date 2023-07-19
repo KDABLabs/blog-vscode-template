@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "qt6",
+      "name": "Qt6 (MSVC)",
       "type": "cppvsdbg",
       "request": "launch",
       // Resolved by CMake Tools:
@@ -17,6 +17,19 @@
         "Q:/qt5_workdir/w/s": "${QTDIR}../Src",
         "C:/Users/qt/work/install": "${QTDIR}../Src",
         "C:/Users/qt/work/qt": "${QTDIR}../Src"
+      }
+    },
+    {
+      "name": "Qt6 (macOS/Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "cwd": "${command:cmake.launchTargetDirectory}",
+      "linux": {
+        "MIMode": "gdb"
+      },
+      "osx": {
+        "MIMode": "lldb",
       }
     }
   ]
