@@ -9,6 +9,13 @@ We illustrate two approaches:
 - Letting the `IDE` set it up for you.
 
 
+# Installing required extensions
+
+Extensions should be automatically installed, per our `.vscode/extensions.json`. But you can go ahead and install already with this oneliner:
+`code --install-extension ms-vscode.cpptools --install-extension ms-vscode.cmake-tools --install-extension twxs.cmake --install-extension llvm-vs-code-extensions.vscode-clangd`
+
+# Let's get to it
+
 Click on the platform you're interested on to proceed:
 - [README-Windows.md](README-Windows.md)
 - [README-macOS.md](README-macOS.md)
