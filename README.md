@@ -47,6 +47,13 @@ This project is just a template, you can reuse it in your own project. You'll ne
 - copy or create the `CMakeUserPresets.json` file, however, do not commit it to your git repo, add it to .gitignore.
 - copy the qt6.natvis file, if using the `MSVC` compiler
 
-## Troubleshooting
+## TODO
 
+- Pretty printers for gcc and lldb
+- debugger source mapping for gcc and lldb
 
+# Further reading
+
+- https://www.kdab.com/using-visual-studio-code-for-qt-apps-pt-1
+- https://www.kdab.com/using-visual-studio-code-for-qt-apps-pt-2
+- https://www.kdab.com/using-vsc-for-qt-apps-part-3
