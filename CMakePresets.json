@@ -72,6 +72,7 @@
     },
     {
       "name": "debug",
+      "description": "Preset which expects Qt and compiler to be put into PATH before launching vscode",
       "binaryDir": "${sourceDir}/build-debug",
       "inherits": [
         "base-ninja",
@@ -80,6 +81,7 @@
     },
     {
       "name": "release",
+      "description": "Preset which expects Qt and compiler to be put into PATH before launching vscode",
       "binaryDir": "${sourceDir}/build-release",
       "inherits": [
         "base-ninja",
@@ -88,6 +90,7 @@
     },
     {
       "name": "profile",
+      "description": "Preset which expects Qt and compiler to be put into PATH before launching vscode",
       "binaryDir": "${sourceDir}/build-profile",
       "inherits": [
         "base-ninja",
@@ -96,6 +99,7 @@
     },
     {
       "name": "debug-msvc",
+      "description": "Preset which expects Qt to be put into PATH before launching vscode. vsvars64.bat is called by the IDE automatically.",
       "binaryDir": "${sourceDir}/build-debug-msvc",
       "inherits": [
         "base-debug",
@@ -105,6 +109,7 @@
     },
     {
       "name": "release-msvc",
+      "description": "Preset which expects Qt to be put into PATH before launching vscode. vsvars64.bat is called by the IDE automatically.",
       "binaryDir": "${sourceDir}/build-release-msvc",
       "inherits": [
         "base-release",
@@ -114,6 +119,7 @@
     },
     {
       "name": "profile-msvc",
+      "description": "Preset which expects Qt to be put into PATH before launching vscode. vsvars64.bat is called by the IDE automatically.",
       "binaryDir": "${sourceDir}/build-profile-msvc",
       "inherits": [
         "base-profile",
