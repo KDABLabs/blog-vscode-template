@@ -13,10 +13,10 @@
       "cwd": "${command:cmake.launchTargetDirectory}",
       "visualizerFile": "${workspaceFolder}/qt6.natvis",
       "sourceFileMap": {
-        "C:/work/build/qt5_workdir/w/s": "${QTDIR}../Src",
-        "Q:/qt5_workdir/w/s": "${QTDIR}../Src",
-        "C:/Users/qt/work/install": "${QTDIR}../Src",
-        "C:/Users/qt/work/qt": "${QTDIR}../Src"
+        "C:/work/build/qt5_workdir/w/s": "${QTDIR}/../Src",
+        "Q:/qt5_workdir/w/s": "${QTDIR}/../Src",
+        "C:/Users/qt/work/install": "${QTDIR}/../Src",
+        "C:/Users/qt/work/qt": "${QTDIR}/../Src"
       }
     },
     {
