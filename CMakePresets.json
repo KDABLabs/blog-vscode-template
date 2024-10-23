@@ -126,6 +126,18 @@
         "base-ninja",
         "base-msvc"
       ]
+    },
+    {
+      "name": "debug-asan",
+      "description": "Preset which shows how to use ASAN",
+      "binaryDir": "${sourceDir}/build-debug-asan",
+      "inherits": [
+        "base-ninja",
+        "base-debug"
+      ],
+      "cacheVariables": {
+        "ENABLE_ASAN": "ON"
+      }
     }
   ]
 }

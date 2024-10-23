@@ -12,6 +12,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
+# Enables address sanitizer
+# Feel free to adapt for other sanitizers or use ECMEnableSanitizers.cmake
+option(ENABLE_ASAN "enable address sanitizer" OFF)
+
+if(ENABLE_ASAN)
+   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
+   set(LINK_FLAGS "${LINK_FLAGS} -fsanitize=address")
+endif()
+
 set(PROJECT_SOURCES
         main.cpp
         widget.cpp
